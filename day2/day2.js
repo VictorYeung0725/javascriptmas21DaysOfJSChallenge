@@ -46,3 +46,24 @@ function transformData(data) {
 }
 
 console.log(transformData(userData));
+
+// NOTE another format on doing this challenge
+
+// function transformData(data){
+//     let resultArr = data.map(person => {
+//         const firstName = person.name.first
+//         const lastName  = person.name.last
+
+//         const date = new Date(person.dob.date)
+
+//         let personObj = {
+//             fullname: `${firstName} ${lastName}`,
+//             birthday: `${date.toDateString()}`
+//         }
+
+//         return personObj
+//     })
+//     return resultArr
+// }
+
+// console.log(transformData(userData));
