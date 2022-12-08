@@ -19,23 +19,39 @@ import products from './data.js';
 
 let shoppingCart = [];
 
-//NOTE 1
-function getSaleItems(data) {
-  data.map((each) => {
-    if (each.type === 'sweet') {
-      const { item, price } = each;
-      console.log(item, price);
-      let shoppingItem = {
-        item: item,
-        price: price,
-      };
-      shoppingCart.push(shoppingItem);
-    }
-  });
-  return shoppingCart;
-}
+//NOTE 1 my own version
 
-getSaleItems(products);
-console.log(shoppingCart);
+// function getSaleItems(data) {
+//   data.map((each) => {
+//     if (each.type === 'sweet') {
+//       const { item, price } = each;
+//       console.log(item, price);
+//       let shoppingItem = {
+//         item: item,
+//         price: price,
+//       };
+//       shoppingCart.push(shoppingItem);
+//     }
+//   });
+//   return shoppingCart;
+// }
+
+// getSaleItems(products);
+// console.log(shoppingCart);
 
 // checkSweet(products);
+
+// NOTE 2 Others Work on this challenge
+
+// function getSaleItems(data){
+//     let sweetsArr = data.filter((item)=>{
+//         return item.type === "sweet"
+//     }).map((sweet)=>{
+//         return {item: sweet.item,
+//                 price: sweet.price}
+//     })
+
+//     return sweetsArr
+// };
+
+// console.log(getSaleItems(products))
