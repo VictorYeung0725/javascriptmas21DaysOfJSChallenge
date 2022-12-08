@@ -1,7 +1,7 @@
 // Review Challenge 4: Taco Tray
 // - Help our chef fill a tray with tacos!
 
-//NOTE 1 my version of the answer
+// NOTE 1 my version of the answer
 // function getRandomNumberOfTacos() {
 //   let randomNum = Math.floor(Math.random() * 10);
 //   let trayArr = new Array(randomNum);
