@@ -16,5 +16,11 @@ split(); <br />
 reverse(); <br />
 join(); <br />
 
+substr() <br />
+The substr() method returns the characters in a string beginning at the specified location through the specified number of characters.<br />
+
+charAt() <br />
+The charAt() method returns the specified character from a string.<br />
+
 try recursion to solve this problem : <br />
 The depth of the recursion is equal to the length of the String. This solution is not the best one and will be really slow if the String is very long and the stack size is of major concern. <br />
