@@ -6,3 +6,15 @@ https://scrimba.com/learn/javascriptmas/-welcome-to-javascriptmas-2022-cv2BLQT8<
 I will finished the day challenge<br />
 then try to look at others<br />
 try to learn from then and try to write a better and clean code<br />
+
+day 11 : reverse a string , reverse a array of string <br />
+the Concept Used in this challeneg: <br />
+how to use backward for-loop; <br />
+built-in method : <br />
+map(); <br />
+split(); <br />
+reverse(); <br />
+join(); <br />
+
+try recursion to solve this problem : <br />
+The depth of the recursion is equal to the length of the String. This solution is not the best one and will be really slow if the String is very long and the stack size is of major concern. <br />
