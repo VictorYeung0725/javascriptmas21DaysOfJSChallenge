@@ -58,7 +58,7 @@ function reverseStringsInArray(arr) {
 console.log(reverseString(title));
 console.log(reverseStringsInArray(messages));
 
-//NOTE others ways for solving this
+//NOTE1 others ways for solving this
 
 function reverseString(arr) {
   let newStr = '';
