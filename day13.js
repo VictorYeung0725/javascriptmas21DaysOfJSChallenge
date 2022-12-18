@@ -37,7 +37,10 @@ Example output: "elephant"
 */
 
 function emojifyWord(word) {
-  return;
+  if (word.startsWith(':') && word.endsWith(':')) {
+    word = word.slice(1, -1);
+  }
+  return emojis[word] || word;
 }
 
 function emojifyWord(word) {
@@ -69,7 +72,10 @@ Example output: "I 💜 my elephant"
 */
 
 function emojifyPhrase(phrase) {
-  return;
+  return phrase
+    .split(' ')
+    .map((item) => emojifyWord(item))
+    .join(' ');
 }
 
 //NOTE others
@@ -83,3 +89,26 @@ function emojifyPhrase(phrase) {
 
 // console.log(emojifyPhrase("I :heart: my :cat:"));
 // console.log(emojifyPhrase("I :heart: my :elephant:"));
+
+//NOTE others
+function emojifyWord(word) {
+  // checking if word start and end with colon
+  const startAndEndWithColon = word.startsWith(':') && word.endsWith(':');
+
+  if (startAndEndWithColon) {
+    // removing the conlon from starting index and of last index
+    const slicedWord = word.slice(1, word.length - 1);
+
+    // finding proper emoji of given word and return emoji if not then returning sliced word
+    return emojis[slicedWord] ? emojis[slicedWord] : slicedWord;
+  } else return word;
+}
+
+function emojifyPhrase(phrase) {
+  // convertin the sentence into array then replacing the word with proper emojis
+  // then returning the emojify sentence
+  return phrase
+    .split(' ')
+    .map((word) => emojifyWord(word))
+    .join(' ');
+}
