@@ -40,7 +40,17 @@ const kittyPrizes = [
 
 // NOTE my answer
 function flatten(arr) {
-  return arr.flat(2);
+  // return arr.flat(2);
+  let falttenArr = [];
+  for(let item of arr){
+    if(item.length > 0){
+      for(let ele of item){
+        falttenArr.push(ele)
+      } 
+    } else {
+      falttenArr.push(item);
+    }
+  }
 }
 
 console.log(flatten(kittyPrizes));
