@@ -29,6 +29,8 @@ Expected output:
 //   }).filter()
 // }
 
+//NOTE second try 
+// BUG why do i have to use () for returning a object 
 function getFreePodcasts(data) {
   let filterFreePod = data.filter((item) => item.paid === false);
 
@@ -38,5 +40,12 @@ function getFreePodcasts(data) {
     paid: podcasts.paid,
   }));
 }
+
+
+//NOTE others 
+// const getFreePodcasts = data => data.filter(pod=>!pod.paid).map(p => ({title:p.title,rating:p.rating,paid:p.paid}))
+
+
+
 
 console.log(getFreePodcasts(podcasts));
